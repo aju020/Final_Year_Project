@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className="p-9 flex flex-col md:flex-row items-center justify-between bg-heading w-full">
+    <div className="p-9 flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-blue-500 to-cyan-400  w-full">
       <div>
         <a href="/" className="text-white font-bold tracking-wider text-6xl transform transition-transform hover:scale-150">PHARMATRUST</a>
       </div>

@@ -134,29 +134,7 @@ const Tracker = () => {
                 var ctr = await Data.methods.medicineCount().call();
                 console.log(medicineID);
                 if (!((medicineID > 0) && (medicineID <= ctr))){
-                        <table className="w-full mt-4 border border-gray-200">
-                                 <thead>
-                                 <tr className="bg-gray-100">
-                                         <th className="border border-gray-200 px-4 py-2 text-2xl">Medicine ID</th>
-                                         <th className="border border-gray-200 px-4 py-2 text-2xl">Name</th>
-                                         <th className="border border-gray-200 px-4 py-2 text-2xl">Date of Expiry</th>
-                                         <th className="border border-gray-200 px-4 py-2 text-2xl">Description</th>
-                                         <th className="border border-gray-200 px-4 py-2 text-2xl">Current Stage</th>
-                                 </tr>
-                                 </thead>
-                                 <tbody>
-                                 {MED && Object.values(MED).map((med, index) => (
-                                         <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
-                                         <td className="border border-gray-200 px-4 py-2 text-2xl">{med.id}</td>
-                                         <td className="border border-gray-200 px-4 py-2 text-2xl">{med.name}</td>
-                                         <td className="border border-gray-200 px-4 py-2 text-2xl">{med.expDate}</td>
-                                         <td className="border border-gray-200 px-4 py-2 text-2xl">{med.description}</td>
-                                         <td className="border border-gray-200 px-4 py-2 text-2xl">{MedStage[index+1]}</td>
-                                         </tr>
-                                 ))}
-                                 </tbody>
-                         </table>
-                        alert("Invalid Medicine ID!!!");
+                                    alert("Invalid Medicine ID!!!");
                 }
                 else {
                     // eslint-disable-next-line
@@ -440,9 +418,9 @@ const Tracker = () => {
                                     </div>
                                     <hr />
                                     <br />
-                                    <div className="grid gap-x-8 gap-y-4 grid-cols-5">
+                                    {/* <div className="grid gap-x-8 gap-y-4 grid-cols-5">
                                         <h2>Medicine is not yet Processed by Raw material supplier</h2>
-                                    </div>
+                                    </div> */}
                                     {/* <button onClick={() => {
                                         showTrackTillDistribution(false);
                                     }} className="btn btn-outline-primary btn-sm">Track Another Item</button> */}
@@ -462,7 +440,7 @@ const Tracker = () => {
                         <div className="p-4">
                                 <label className="block mb-8 text-4xl " htmlFor="license">Enter Medicine ID</label>
                                 <input
-                                className="bg-but border rounded-md py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline text-3xl"
+                                className="bg-button border rounded-md py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline text-3xl"
                                 id="license"
                                 type="text"
                                 onChange={handleMedicineID}
@@ -471,7 +449,7 @@ const Tracker = () => {
                                 />
                         </div>
                         <button className='bg-heading text-white px-6 py-3 rounded-md mt-8 font-bold hover:bg-green-800 text-3xl' onClick={handlerSubmit}>Track</button>
-                        {/* <table className="w-full mt-4 border border-gray-200">
+                        <table className="w-full mt-4 border border-gray-200">
                                 <thead>
                                 <tr className="bg-gray-100">
                                         <th className="border border-gray-200 px-4 py-2 text-2xl">Medicine ID</th>
@@ -492,7 +470,7 @@ const Tracker = () => {
                                         </tr>
                                 ))}
                                 </tbody>
-                        </table> */}
+                        </table>
 
                       
                         

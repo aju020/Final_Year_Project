@@ -12,6 +12,7 @@ module.exports = {
         'button': '#d0d6d9',
         'hoverButton': '#005d3a',
         'headerHover': '#021c2b',
+        
       },
     },
   },
