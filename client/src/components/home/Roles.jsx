@@ -39,7 +39,7 @@ const Home = () => {
               
         return (
 
-        <div className="flex flex-wrap items-start p-20 bg-jade h-full">  
+        <div className="flex flex-wrap items-start p-20 bg-gradient-to-r from-blue-500 to-cyan-400 h-screen">  
                         {/* Container for Consumer */}
                         <div className="max-w-5xl mx-4 my-20 w-1/2">
                                 <h1 className="text-7xl font-bold text-white mb-16">Are you a Consumer ?</h1>

@@ -20,10 +20,10 @@ const Home = () => {
               
         return (
 
-        <div className="flex flex-wrap items-start p-9 bg-jade h-full" >
+        <div className="flex flex-wrap items-start p-9 mt-15 bg-gradient-to-r from-blue-500 to-cyan-400 h-screen" >
                 <div className="max-w-5xl mx-4 my-20 w-1/2">
                         <h1 className="text-7xl font-bold text-white mb-20">What is PharmaTrust ?</h1>
-                        <p className="text-2xl leading-relaxed mt-4 text-white text-justify">
+                        <p className="text-3xl leading-relaxed mt-4 text-white text-justify">
                         Welcome to PharmaTrust, a pioneering initiative poised to revolutionize the pharmaceutical industry through the transformative 
                         capabilities of blockchain technology. Our mission is centered on establishing a transparent and legalized pharmaceutical supply chain 
                         system, prioritizing patient safety, regulatory compliance, and overall industry integrity. With a focus on blockchain-based platform 
@@ -38,20 +38,20 @@ const Home = () => {
                 <div className="flex flex-col max-w-5xl my-20 ml-8 mb-8 place-content-center w-1/2 cursor-pointer">
                         <h1 className='text-7xl font-bold text-white mb-6'>Features</h1>
                         <div className="mb-6 p-5 shadow-md transition-all duration-300 hover:shadow-lg rounded-lg">
-                                <h1 className="text-4xl mb-2"><MdGroups className="inline-block mr-2" />Add Stakeholders</h1>
-                                <p className="text-xl">Option to add manufacturers, raw materials suppliers, distributors, and retailers</p>
+                                <h1 className="text-white text-4xl mb-2"><MdGroups className="inline-block mr-2" />Add Stakeholders</h1>
+                                <p className="text-white text-2xl">Option to add manufacturers, raw materials suppliers, distributors, and retailers</p>
                         </div>
-                        <div className="mb-6 p-5 shadow-md transition-all duration-300 hover:shadow-lg rounded-lg">
-                                <h1 className="text-4xl mb-2"><GiMedicines className="inline-block mr-2" />Order Medicines</h1>
-                                <p className="text-xl">Option to order medicine applicable only for retailers</p>
+                        <div className="text-white mb-6 p-5 shadow-md transition-all duration-300 hover:shadow-lg rounded-lg">
+                                <h1 className="text-white text-4xl mb-2"><GiMedicines className="inline-block mr-2" />Order Medicines</h1>
+                                <p className="text-white text-2xl">Option to order medicine applicable only for retailers</p>
                         </div>
-                        <div className="mb-6 p-5 shadow-md transition-all duration-300 hover:shadow-lg rounded-lg">
-                                <h1 className="text-4xl mb-2"><CgTrack className="inline-block mr-2" />Track Medicines</h1>
-                                <p className="text-xl">Option to update the status of medicine for manufacturers, raw material suppliers, distributors, and retailers</p>
+                        <div className="text-white mb-6 p-5 shadow-md transition-all duration-300 hover:shadow-lg rounded-lg">
+                                <h1 className="text-white text-4xl mb-2"><CgTrack className="inline-block mr-2" />Track Medicines</h1>
+                                <p className="text-white text-2xl">Option to update the status of medicine for manufacturers, raw material suppliers, distributors, and retailers</p>
                         </div>
-                        <div className="mb-6 p-5 shadow-md transition-all duration-300 hover:shadow-lg rounded-lg">
-                                <h1 className="text-4xl mb-2"><GrDocumentUpdate className="inline-block mr-2" />Update Medicines</h1>
-                                <p className="text-xl">Option to track any medicine</p>
+                        <div className="text-white mb-6 p-5 shadow-md transition-all duration-300 hover:shadow-lg rounded-lg">
+                                <h1 className="text-white text-4xl mb-2"><GrDocumentUpdate className="inline-block mr-2" />Update Medicines</h1>
+                                <p className="text-white text-2xl">Option to track any medicine</p>
                         </div>
                 </div>
 
